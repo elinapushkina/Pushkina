@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+int a,b,c,d,e,f,in;
+e = 0;
+in = 0;
+cin >> a >> b;
+for(int i=a;i<=b;i++)
+{
+d=0;
+c=i;
+while (c!=0)
+{
+d+=c%2;
+c/=2;
+}
+if (d == 5 && i%2 ==0 && i%10 != 0)
+{
+e++;
+f=i;
+in=1;
+}
+}
+if(in>0)
+cout<<e<<" "<<f;
+else
+cout<<in<<" "<<in;
+}
